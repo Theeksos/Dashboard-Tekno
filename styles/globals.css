@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+height: 100%;
+width: 100%;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/* LOGIN */
+
+.container_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 5rem;
+}
+
+.login_image, .login_form {
+  flex: 1;
+  max-width: 50%;
+}
+
+.login_image img {
+  width: 100%;
+  height: auto;
+}
+
+.login_form h1 {
+  font-size: 2.5rem;
+  padding-bottom: .5rem;
+}
+
+.login_form p {
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
+}
+
+.login_form form label {
+  display: block;
+  margin-bottom: .5rem;
+
+}
+
+.login_form form input {
+  margin-bottom: 1rem;
+  width: 70%;
+  height: 2rem;
+}
+
+.login_form form button {
+  display: block;
+  width: 71%;
+  height: 2.5rem;
+  background-color: #3572EF;
+  color: white;
+}
+
+.login_form form button:hover {
+  cursor: pointer;
+}
+
+/* TEMPLATE */
+
+.content .page {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.center {
+  text-align: center;
+}
+
+/* DASHBOARD */
+
+/* WORK LOG & WORK ORDER */
+
+.content table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.content .table.expanded {
+  min-width: 150%;
+}
+
+tbody td {
+  transition: all 0.3s ease-in-out;
+}
+.content table th, td {
+  text-align: center;
+  padding: 10px;
+}
+
+.content table th {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.content table tr td .icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content table tr td img {
+  width: 30px;
+  cursor: pointer;
+}
+
+/* MODAL BOX */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-box h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+.form-group label {
+  display: block;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: .5px solid black;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-actions button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-actions button:hover {
+  background-color: #0056b3;
+}
+
+.confirm-button button{
+  margin: 15px;
+  padding: 5px;
+  cursor: pointer; 
+}

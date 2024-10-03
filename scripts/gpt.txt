@@ -1,0 +1,11 @@
+coba migrasikan skema dulu tabelnya nyesuain punya aku
+
+<th>No</th>
+<th>PIC</th>
+<th className="center">Week</th>
+<th>Date</th>
+<th>Opportunity</th>
+<th>Type</th>
+<th>Account</th>
+<th>Activity</th>
+<th>Action</th>
